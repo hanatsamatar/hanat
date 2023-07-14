@@ -2,7 +2,7 @@
 A bash script named after myself for high-availability NAT in-between EC2 instances - modification of kteru's version
 
 
-At Startup: 
+[Startup]
 
 Setting sysctl variables to forwarding packet
 Adding IP masquerade rule
@@ -13,7 +13,7 @@ Configuring route table of subnets which have responsibility
 
 When you replace the route table 
 
-Whats needed: 
+[What's needed]
 
 2 EC2 instances which have EIP or Public IP
 No need to select "NAT instance"
@@ -31,7 +31,7 @@ iptables
 
 
 
-Installation : 
+[Installation]
 
 # git clone https://github.com/hanatsamatar/hanat.git /opt/hanat
 # cp -a /opt/hanat/docs/init_hanat.sh /etc/init.d/hanat
